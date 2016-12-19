@@ -3,6 +3,7 @@
 # Lisa Bramer #
 # September 26, 2016 #
 # Updated by Kelly Stratton December 5, 2016 #
+# Re-run by Kelly Stratton December 19, 2016 to update the attributes #
 #------------------------------------------------#
 
 library(MSomicsQC)
