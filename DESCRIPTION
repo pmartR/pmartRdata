@@ -1,7 +1,7 @@
 Package: pmartRdata
 Type: Package
 Title: Mass spectrometry (MS) data
-Version: 1.0
+Version: 1.0.2
 Date: 2016-09-26
 Author: Kelly Stratton [aut], Lisa Bramer [aut], Bobbie-Jo Webb-Robertson [ctb]
 Maintainer: Kelly Stratton <kelly.stratton@pnnl.gov>, Lisa Bramer <lisa.bramer@pnnl.gov>
