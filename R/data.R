@@ -1,3 +1,42 @@
+#' Isobaric Peptide Expression Data (e_data)
+#'
+#' A dataset containing simulated data from an iTRAQ instrument. 
+#'
+#' @format A data.frame with 1993 rows (peptides) and 13 columns (peptide identifier and samples):
+#' @rdname isobaric_edata
+#' @name isobaric_edata
+NULL
+
+#' Isobaric Peptide Feature Data (f_data)
+#'
+#' A dataset containing the sample metadata.
+#'
+#' @format A data.frame with 12 rows (samples) and 5 columns (sample identifier, experiment/plate, channel, reference information, and group information):
+#' \describe{
+#'   \item{Sample}{Sample identifier (matches column headers in isobaric_edata)}
+#'   \item{Set}{iTRAQ plate/experiment information}
+#'   \item{iTRAQ.Channel}{Information on which channel a sample was run on}
+#'   \item{Reference}{Indicator of whether a sample is a reference sample or not}
+#'   \item{Group}{Group/treatment information}
+#' }
+#' @rdname isobaric_fdata
+#' @name isobaric_fdata
+NULL
+
+#' Isobaric Data Object of Class isobaricpepData
+#'
+#' An S3 object of class isobaricpepData
+#'
+#' @format A isobaricpepData object (see \code{\link[pmartRqc]{as.isobaricpepData}} for details)
+#' \describe{
+#'   \item{e_data}{a \eqn{p \times n + 1} data.frame of expression data, where \eqn{p} is the number of peptides observed and \eqn{n} is the number of samples. Each row corresponds to data for each peptide}
+#'   \item{f_data}{a data.frame with \eqn{n} rows. Each row corresponds to a sample with one column giving the unique sample identifiers found in e_data column names and other columns providing qualitative and/or quantitative traits of each sample.}
+#'   \item{e_meta}{NULL}
+#' }
+#' @rdname isobaric_object
+#' @name isobaric_object
+NULL
+
 #' Lipidomics Expression Data (e_data)
 #'
 #' A dataset containing the quantified mass spectra for 146 lipids collected on a Thermo LTQ-Orbitrap Velos Mass Spectrometer (Thermo Fisher Corporation, San Jose, CA, USA).
