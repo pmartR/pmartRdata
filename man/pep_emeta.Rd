@@ -16,4 +16,3 @@ See details of \code{\link{pmartRdata}} for relevant grant numbers. Data is also
 \description{
 A dataset containing the peptide metadata (e.g. mapping from peptide to proteins).
 }
-

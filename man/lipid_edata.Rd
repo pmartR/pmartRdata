@@ -15,4 +15,3 @@ See details of \code{\link{pmartRdata}} for relevant grant numbers. Data is also
 \description{
 A dataset containing the quantified mass spectra for 146 lipids collected on a Thermo LTQ-Orbitrap Velos Mass Spectrometer (Thermo Fisher Corporation, San Jose, CA, USA).
 }
-

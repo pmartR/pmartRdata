@@ -15,4 +15,3 @@ See details of \code{\link{pmartRdata}} for relevant grant numbers. Data is also
 \description{
 An S3 object of class pepData (see \code{\link[pmartRqc]{as.pepData}} for details)
 }
-

@@ -15,4 +15,3 @@ See details of \code{\link{pmartRdata}} for relevant grant numbers. Data is also
 \description{
 A dataset containing the quantified mass spectra for 80 metabolites collected on an Agilent GC 7890A coupled with MSD 5975C Mass Spectrometer (Agilent Technologies, Santa Clara, CA, USA).
 }
-

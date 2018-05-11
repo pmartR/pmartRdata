@@ -15,4 +15,3 @@ See details of \code{\link{pmartRdata}} for relevant grant numbers.
 \description{
 An S3 object of class proData (see \code{\link[pmartRqc]{as.proData}} for details)
 }
-
