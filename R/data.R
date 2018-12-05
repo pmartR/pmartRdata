@@ -247,4 +247,53 @@ NULL
 #' @name pro_object
 NULL
 
+#' Peptide-level Expression Data (e_data) with technical replicates
+#'
+#' A dataset containing the quantified mass spectra for 21,802 unique peptides collected on a Thermo LTQ-Orbitrap Velos Mass Spectrometer (Thermo Fisher Corporation, San Jose, CA, USA).
+#' Columns represent technical replicates within each of 32 biological samples (2 technical replicates per sample).
+#' 
+#' @format A data.frame with 21,802 rows (peptides) and 65 columns (peptide identifier and LC-MS runs).  Column names have the following tags:
+#' \describe{
+#'   \item{Mass_Tag_ID}{Peptide mass tag identifier}
+#'   \item{1:0, 1:7}{Indicators representing dilutions of mouse plasma to Shewanella oneidensis MR-1}
+#'   \item{Rep1, Rep2}{Indicators of technical replicates within a biological sample}
+#' }
+#' @source See details of \code{\link{pmartRdata}} for relevant grant numbers.
+#' @rdname techrep_edata
+#' @name techrep_edata
+NULL
+
+#' Peptide-level Technical Replicate Feature Data (f_data)
+#'
+#' A dataset containing the technical replicate metadata, including technical replicate sample assignment variable.
+#'
+#' @format A data.frame with 64 rows (samples) and 4 columns:
+#' \describe{
+#'   \item{RunID}{LC-MS run identifier (matches column headers in pep_edata)}
+#'   \item{FACTOR}{Character string indicating either regular weight (RW), or obese (OB) groups}
+#'   \item{DILUTION}{Character string indicating dilution of mouse plasma to Shewanella Oneidensis MR-1}
+#'   \item{TECH_REP}{Character string indicating which technical replicates belong to the same biological sample}
+#' }
+#' @source  See details of \code{\link{pmartRdata}} for relevant grant numbers.
+#' @rdname techrep_fdata
+#' @name techrep_fdata
+NULL
+
+#' Peptide-level Data Object of Class pepData with technical replicates
+#'
+#' An S3 object of class pepData with a technical replicate column specified.  See documentation in \code{as.pepData} and \code{combine_techreps}.
+#'
+#' @format A pepData object with technical replicate column "TECH_REP" found in f_data.
+#' \describe{
+#'   \item{e_data}{a \eqn{p \times n + 1} data.frame of expression data, where \eqn{p} is the number of peptides observed and \eqn{n} is the number of technical replicates. Each row corresponds to data for each peptide}
+#'   \item{f_data}{a data.frame with \eqn{n} rows. Each row corresponds to a technical replicate with one column giving the unique replicate identifiers found in e_data column names and other columns providing qualitative and/or quantitative traits of each replicate.\cr
+#'   In this data.frame, the column "TECH_REP" specifies which technical replicates were drawn from the same biological sample.}
+#'   \item{e_meta}{NULL}
+#' }
+#' @source See details of \code{\link{pmartRdata}} for relevant grant numbers.
+#' @rdname techrep_pep_object
+#' @name techrep_pep_object
+NULL
+
+
 
