@@ -28,6 +28,8 @@ Data generation was supported by the National Institutes of Health (NIH)/Nationa
 
 \references{
 Webb-Robertson BJ, Matzke MM, Datta S, Payne SH, Kang J, Bramer LM, Nicora CD, Shukla AK, Metz TO, Rodland KD, Smith RD, Tardiff MF, McDermott JE, Pounds JG, Waters KM (2014), \emph{Bayesian proteoform modeling improves protein quantification of global proteomic measurements}. Molecular & Cellular Proteomics. doi: 10.1074/mcp.M113.030932.
+
+Tilton, S. C.; Waters, K. M.; Karin, N. J.; Webb-Robertson, B. J.; Zangar, R. C.; Lee, K. M.; Bigelow, D. J.; Pounds, J. G.; Corley, R. A., \emph{Diet-induced obesity reprograms the inflammatory response of the murine lung to inhaled endotoxin}. Toxicol Appl Pharmacol 2013, 267 (2), 137-48.
 }
 \seealso{
 \code{\link[pmartRdata]{as.proData}}

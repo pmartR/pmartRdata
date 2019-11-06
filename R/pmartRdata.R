@@ -18,6 +18,7 @@
 #' Data generation was supported by the National Institutes of Health (NIH)/National Institute of Allergy and Infectious Diseases (NIAID) through grant U19 A1-106772 and computational work was supported by the NIH/National Cancer Institute through grant U01–1CA184783.  Data were collected and processed in the Environmental Molecular Sciences Laboratory (EMSL). EMSL is a national scientific user facility supported by the Department of Energy. All work was performed at PNNL, which is a multiprogram national laboratory operated by Battelle for the U.S. Department of Energy under contract DE-AC06-76RL01830.
 #'
 #' @references Webb-Robertson BJ, Matzke MM, Datta S, Payne SH, Kang J, Bramer LM, Nicora CD, Shukla AK, Metz TO, Rodland KD, Smith RD, Tardiff MF, McDermott JE, Pounds JG, Waters KM (2014), \emph{Bayesian proteoform modeling improves protein quantification of global proteomic measurements}. Molecular & Cellular Proteomics. doi: 10.1074/mcp.M113.030932.
+#' @references Tilton, S. C.; Waters, K. M.; Karin, N. J.; Webb-Robertson, B. J.; Zangar, R. C.; Lee, K. M.; Bigelow, D. J.; Pounds, J. G.; Corley, R. A., \emph{Diet-induced obesity reprograms the inflammatory response of the murine lung to inhaled endotoxin}. Toxicol Appl Pharmacol 2013, 267 (2), 137-48.
 #'
 #' @docType package
 #' @name pmartRdata

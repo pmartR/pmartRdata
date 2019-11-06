@@ -64,3 +64,22 @@ attr(lipid_object, "data_info")$data_scale <- "abundance"
 usethis::use_data(lipid_object, overwrite = TRUE)
 
 ##### 
+
+### Smoking Mice Dataset
+library(readr)
+
+sm_edata_path = '/Users/clab683/Documents/R-Projects/ExampleAnalysis_SmokingMice/edata.csv'
+sm_fdata_path = '/Users/clab683/Documents/R-Projects/ExampleAnalysis_SmokingMice/fdata.csv'
+sm_emeta_path = '/Users/clab683/Documents/R-Projects/ExampleAnalysis_SmokingMice/emeta.csv'
+
+smoke_edata = read_csv(sm_edata_path) %>% as.data.frame()
+smoke_fdata = read_csv(sm_fdata_path) %>% as.data.frame()
+smoke_emeta = read_csv(sm_emeta_path) %>% as.data.frame()
+
+usethis::use_data(smoke_edata)
+usethis::use_data(smoke_fdata)
+usethis::use_data(smoke_emeta)
+
+smoke_pep_object = mypepData <- as.pepData(e_data = smoke_edata, f_data = smoke_fdata, e_meta = smoke_emeta, 
+                                    edata_cname = "Mass_Tag_ID", fdata_cname = "SampleID", emeta_cname = "Protein", data_scale = "abundance", check.names = FALSE)
+usethis::use_data(smoke_pep_object)
