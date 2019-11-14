@@ -13,5 +13,5 @@
 See details of \code{\link{pmartRdata}} for relevant grant numbers. Data is also available on MassIVE (massive.ucsd.edu) with dataset id MSV000079153.
 }
 \description{
-An S3 object of class metabData (see \code{\link[pmartRqc]{as.metabData}} for details)
+An S3 object of class metabData (see \code{\link[pmartR]{as.metabData}} for details)
 }
