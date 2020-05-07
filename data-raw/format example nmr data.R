@@ -1,7 +1,7 @@
 ## May 1, 2020 - Kelly Stratton - create nmrData objects and corresponding LC or GC objects #
 
 
-
+library(pmartR)
 library(pmartRdata)
 library(devtools)
 library(usethis)
