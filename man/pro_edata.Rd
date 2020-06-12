@@ -18,4 +18,3 @@ A dataset containing the log2 median-normalized quantified mass spectra for 2,73
 \references{
 Webb-Robertson BJ, Matzke MM, Datta S, Payne SH, Kang J, Bramer LM, Nicora CD, Shukla AK, Metz TO, Rodland KD, Smith RD, Tardiff MF, McDermott JE, Pounds JG, Waters KM (2014), \emph{Bayesian proteoform modeling improves protein quantification of global proteomic measurements}. Molecular & Cellular Proteomics. doi: 10.1074/mcp.M113.030932.
 }
-

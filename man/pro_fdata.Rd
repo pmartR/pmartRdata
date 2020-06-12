@@ -14,4 +14,3 @@ See details of \code{\link{pmartRdata}} for relevant grant numbers.
 \description{
 A dataset containing the sample metadata.
 }
-
