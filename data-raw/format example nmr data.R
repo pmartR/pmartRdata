@@ -18,6 +18,9 @@ nmr_emeta_identified <- readRDS(paste0(tomatodir, "emeta.RDS"))
 
 all(nmr_fdata_identified$SampleID == names(nmr_edata_identified[-1]))
 
+# add sample property to f_data to use for normalization #
+nmr_fdata_identified$Concentration <- rnorm(n = nrow(nmr_fdata_identified), mean = 40, sd = 10)
+
 # save the individual data.frames to the package #
 use_data(nmr_edata_identified, overwrite = TRUE)
 use_data(nmr_fdata_identified, overwrite = TRUE)
