@@ -32,3 +32,19 @@ nmr_object_identified <- as.nmrData(e_data = nmr_edata_identified, f_data = nmr_
   
 
 usethis::use_data(nmr_object_identified, overwrite = TRUE)
+
+
+#### 01-11-2021 KGS - update data object only, new attribute added in pmartR::as.nmrData()
+data("nmr_edata_identified")
+data("nmr_fdata_identified")
+data("nmr_emeta_identified")
+
+nmr_object_identified <- as.nmrData(e_data = nmr_edata_identified, f_data = nmr_fdata_identified, e_meta = nmr_emeta_identified, edata_cname = "Metabolite", fdata_cname = "SampleID", emeta_cname = "Metabolite", check.names = FALSE, nmr_norm = FALSE)
+
+attr(nmr_object_identified, "nmr_info")
+
+usethis::use_data(nmr_object_identified, overwrite = TRUE)
+devtools::document()
+
+data("nmr_object_identified")
+attr(nmr_object_identified, "nmr_info")
