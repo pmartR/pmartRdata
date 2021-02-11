@@ -3,12 +3,14 @@
 \name{smoke_pep_object}
 \alias{smoke_pep_object}
 \title{Protein-level Data Object of Class pepData from a cancer/obesity study on mice.}
-\format{A pepData object
+\format{
+A pepData object
 \describe{
   \item{e_data}{a \eqn{p \times n + 1} data.frame of expression data, where \eqn{p} is the number of peptides observed and \eqn{n} is the number of samples. Each row corresponds to data for each peptide}
   \item{f_data}{a data.frame with \eqn{n} rows. Each row corresponds to a sample with one column giving the unique sample identifiers found in e_data column names and other columns providing qualitative and/or quantitative traits of each sample.}
   \item{e_meta}{an optional data.frame with \eqn{p} rows. Each row corresponds to a peptide with one column giving peptide names (must be named the same as the column in \code{e_data}) and other columns giving meta information (e.g. mappings of peptides to proteins).}
-}}
+}
+}
 \source{
 See details of \code{\link{pmartRdata}} for relevant grant numbers.
 }

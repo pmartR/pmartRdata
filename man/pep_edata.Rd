@@ -3,12 +3,14 @@
 \name{pep_edata}
 \alias{pep_edata}
 \title{Peptide-level Expression Data (e_data)}
-\format{A data.frame with 17,407 rows (peptides) and 13 columns (peptide identifier and samples):
+\format{
+A data.frame with 17,407 rows (peptides) and 13 columns (peptide identifier and samples):
 \describe{
   \item{Mass_Tag_ID}{Peptide mass tag identifier}
   \item{Mock*}{Three columns of mock samples}
   \item{Infection*}{Eight columns of infection samples}
-}}
+}
+}
 \source{
 See details of \code{\link{pmartRdata}} for relevant grant numbers. Data is also available on MassIVE (massive.ucsd.edu) with dataset id MSV000079152.
 }

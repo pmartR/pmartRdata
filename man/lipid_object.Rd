@@ -3,12 +3,14 @@
 \name{lipid_object}
 \alias{lipid_object}
 \title{Lipidomics Data Object of Class lipidData}
-\format{A lipidData object (see \code{\link[pmartR]{as.lipidData}} for details)
+\format{
+A lipidData object (see \code{\link[pmartR]{as.lipidData}} for details)
 \describe{
   \item{e_data}{a \eqn{p \times n + 1} data.frame of expression data, where \eqn{p} is the number of lipids observed and \eqn{n} is the number of samples. Each row corresponds to data for each lipid}
   \item{f_data}{a data.frame with \eqn{n} rows. Each row corresponds to a sample with one column giving the unique sample identifiers found in e_data column names and other columns providing qualitative and/or quantitative traits of each sample.}
   \item{e_meta}{NULL}
-}}
+}
+}
 \source{
 See details of \code{\link{pmartRdata}} for relevant grant numbers. Data is also available on MassIVE (massive.ucsd.edu) with dataset id MSV000079154.
 }

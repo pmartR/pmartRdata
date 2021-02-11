@@ -3,12 +3,14 @@
 \name{metab_edata}
 \alias{metab_edata}
 \title{Metabolomics Expression Data (e_data)}
-\format{A data.frame with 80 rows (metabolites) and 13 columns (metabolite identifier and samples):
+\format{
+A data.frame with 80 rows (metabolites) and 13 columns (metabolite identifier and samples):
 \describe{
   \item{Metabolite}{Metabolite name}
   \item{Mock*}{Three columns of mock infected samples}
   \item{Infection*}{Nine columns of infected samples}
-}}
+}
+}
 \source{
 See details of \code{\link{pmartRdata}} for relevant grant numbers. Data is also available on MassIVE (massive.ucsd.edu) with dataset id MSV000079153.
 }
