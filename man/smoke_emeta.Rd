@@ -3,14 +3,16 @@
 \name{smoke_emeta}
 \alias{smoke_emeta}
 \title{Peptide-level Meta Data (e_meta) from a cancer/obesity study on mice.}
-\format{A data.frame with 12328 rows (mass tags) and 6 columns:
+\format{
+A data.frame with 12328 rows (mass tags) and 6 columns:
 \describe{
   \item{PeptideEx}{Raw peptide sequence strings.}
   \item{Mass_Tag_ID}{Indicator of control or smoke exposed group}
   \item{Peptide}{Unique peptide sequences}
   \item{Protein}{Mapped protein identifiers}
   \item{Mod_Count/Mod Description}{Number and descriptions of modifications}
-}}
+}
+}
 \source{
 See details of \code{\link{pmartRdata}} for relevant grant numbers.
 }

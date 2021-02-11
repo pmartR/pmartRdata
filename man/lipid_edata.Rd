@@ -3,12 +3,14 @@
 \name{lipid_edata}
 \alias{lipid_edata}
 \title{Lipidomics Expression Data (e_data)}
-\format{A data.frame with 146 rows (lipids) and 12 columns (lipid identifier and samples):
+\format{
+A data.frame with 146 rows (lipids) and 12 columns (lipid identifier and samples):
 \describe{
   \item{LipidCommonName}{Lipid common name}
   \item{Mock*}{Three columns of mock infected samples}
   \item{Infection*}{Eight columns of infected samples}
-}}
+}
+}
 \source{
 See details of \code{\link{pmartRdata}} for relevant grant numbers. Data is also available on MassIVE (massive.ucsd.edu) with dataset id MSV000079154.
 }

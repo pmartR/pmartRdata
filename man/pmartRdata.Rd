@@ -3,7 +3,6 @@
 \docType{package}
 \name{pmartRdata}
 \alias{pmartRdata}
-\alias{pmartRdata-package}
 \title{pmartRdata}
 \description{
 The pmartRdata package contains four sets of example mass spectrometry data: proteomics (both peptide- and protein-level data), metabolomics, and lipidomics.

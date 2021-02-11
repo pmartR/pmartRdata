@@ -3,12 +3,14 @@
 \name{pro_edata}
 \alias{pro_edata}
 \title{Protein-level Expression Data (e_data)}
-\format{A data.frame with 2,731 rows (proteins) and 12 columns (protein identifier and samples):
+\format{
+A data.frame with 2,731 rows (proteins) and 12 columns (protein identifier and samples):
 \describe{
   \item{Reference}{Reference protein name}
   \item{Mock*}{Three columns of mock samples}
   \item{Infection*}{Eight columns of infection samples}
-}}
+}
+}
 \source{
 See details of \code{\link{pmartRdata}} for relevant grant numbers.
 }

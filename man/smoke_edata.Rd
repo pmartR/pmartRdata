@@ -3,12 +3,14 @@
 \name{smoke_edata}
 \alias{smoke_edata}
 \title{Peptide-level Expression Data (e_data) from a cancer/obesity study on mice.}
-\format{A data.frame with 12328 rows (mass tags) and 17 columns (mass tag and sample columns):
+\format{
+A data.frame with 12328 rows (mass tags) and 17 columns (mass tag and sample columns):
 \describe{
   \item{Mass_Tag_ID}{Peptide mass tag identifier}
   \item{U54_SMOKEmp_1*}{Eight columns of control samples}
   \item{U54_SMOKEmp_3*}{Eight columns of smoke exposed samples}
-}}
+}
+}
 \source{
 See details of \code{\link{pmartRdata}} for relevant grant numbers.
 }
