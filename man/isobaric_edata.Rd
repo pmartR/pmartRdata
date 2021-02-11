@@ -3,7 +3,9 @@
 \name{isobaric_edata}
 \alias{isobaric_edata}
 \title{Isobaric Peptide Expression Data (e_data)}
-\format{A data.frame with 1993 rows (peptides) and 13 columns (peptide identifier and samples):}
+\format{
+A data.frame with 1993 rows (peptides) and 13 columns (peptide identifier and samples):
+}
 \description{
 A dataset containing simulated data from an iTRAQ instrument.
 }

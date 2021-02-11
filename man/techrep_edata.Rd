@@ -3,12 +3,14 @@
 \name{techrep_edata}
 \alias{techrep_edata}
 \title{Peptide-level Expression Data (e_data) with technical replicates}
-\format{A data.frame with 21,802 rows (peptides) and 65 columns (peptide identifier and LC-MS runs).  Column names have the following tags:
+\format{
+A data.frame with 21,802 rows (peptides) and 65 columns (peptide identifier and LC-MS runs).  Column names have the following tags:
 \describe{
   \item{Mass_Tag_ID}{Peptide mass tag identifier}
   \item{1:0, 1:7}{Indicators representing dilutions of mouse plasma to Shewanella oneidensis MR-1}
   \item{Rep1, Rep2}{Indicators of technical replicates within a biological sample}
-}}
+}
+}
 \source{
 See details of \code{\link{pmartRdata}} for relevant grant numbers.
 }

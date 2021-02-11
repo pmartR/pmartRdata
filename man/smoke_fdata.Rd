@@ -3,11 +3,13 @@
 \name{smoke_fdata}
 \alias{smoke_fdata}
 \title{Peptide-level Sample Feature Data (f_data) from a cancer/obesity study on mice.}
-\format{A data.frame with 16 rows (samples) and 2 columns (sample names and group assignment):
+\format{
+A data.frame with 16 rows (samples) and 2 columns (sample names and group assignment):
 \describe{
   \item{SampleID}{Sample identifier (matches column headers in pep_edata)}
   \item{Status}{Indicator of control or smoke exposed group}
-}}
+}
+}
 \source{
 See details of \code{\link{pmartRdata}} for relevant grant numbers.
 }
