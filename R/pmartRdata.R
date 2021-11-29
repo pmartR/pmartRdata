@@ -24,8 +24,8 @@
 #' @name pmartRdata
 #' @rdname pmartRdata
 #'
-#' @seealso \code{\link[pmartRdata]{as.proData}}
-#' @seealso \code{\link[pmartRdata]{as.lipidData}}
-#' @seealso \code{\link[pmartRdata]{as.metabData}}
-#' @seealso \code{\link[pmartRdata]{as.pepData}}
+#' @seealso \code{\link[pmartR]{as.proData}}
+#' @seealso \code{\link[pmartR]{as.lipidData}}
+#' @seealso \code{\link[pmartR]{as.metabData}}
+#' @seealso \code{\link[pmartR]{as.pepData}}
 NULL

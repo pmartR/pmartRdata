@@ -4,7 +4,8 @@
 \alias{isobaric_fdata}
 \title{Isobaric Peptide Feature Data (f_data)}
 \format{
-A data.frame with 12 rows (samples) and 5 columns (sample identifier, experiment/plate, channel, reference information, and group information):
+A data.frame with 12 rows (samples) and 5 columns (sample identifier,
+  experiment/plate, channel, reference information, and group information):
 \describe{
   \item{Sample}{Sample identifier (matches column headers in isobaric_edata)}
   \item{Set}{iTRAQ plate/experiment information}

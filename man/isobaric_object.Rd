@@ -4,10 +4,16 @@
 \alias{isobaric_object}
 \title{Isobaric Data Object of Class isobaricpepData}
 \format{
-A isobaricpepData object (see \code{\link[pmartR]{as.isobaricpepData}} for details)
+A isobaricpepData object (see
+  \code{\link[pmartR]{as.isobaricpepData}} for details)
 \describe{
-  \item{e_data}{a \eqn{p \times n + 1} data.frame of expression data, where \eqn{p} is the number of peptides observed and \eqn{n} is the number of samples. Each row corresponds to data for each peptide}
-  \item{f_data}{a data.frame with \eqn{n} rows. Each row corresponds to a sample with one column giving the unique sample identifiers found in e_data column names and other columns providing qualitative and/or quantitative traits of each sample.}
+  \item{e_data}{a \eqn{p \times n + 1} data.frame of expression data, where
+  \eqn{p} is the number of peptides observed and \eqn{n} is the number of
+  samples. Each row corresponds to data for each peptide}
+  \item{f_data}{a data.frame with \eqn{n} rows. Each row corresponds to a
+  sample with one column giving the unique sample identifiers found in e_data
+  column names and other columns providing qualitative and/or quantitative
+  traits of each sample.}
   \item{e_meta}{NULL}
 }
 }
