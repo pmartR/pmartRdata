@@ -4,14 +4,17 @@
 \alias{metab_fdata}
 \title{Metabolomics Sample Feature Data (f_data)}
 \format{
-A data.frame with 12 rows (samples) and 2 columns (sample identifier and condition):
+A data.frame with 12 rows (samples) and 2 columns (sample identifier
+  and condition):
 \describe{
   \item{SampleID}{Sample identifier (matches column headers in lipid_edata)}
   \item{Condition}{Character string indicating either "Infection" or "Mock"}
 }
 }
 \source{
-See details of \code{\link{pmartRdata}} for relevant grant numbers. Data is also available on MassIVE (massive.ucsd.edu) with dataset id MSV000079153.
+See details of \code{\link{pmartRdata}} for relevant grant numbers.
+  Data is also available on MassIVE (massive.ucsd.edu) with dataset id
+  MSV000079153.
 }
 \description{
 A dataset containing the sample metadata.

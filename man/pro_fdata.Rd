@@ -4,7 +4,8 @@
 \alias{pro_fdata}
 \title{Protein-level Sample Feature Data (f_data)}
 \format{
-A data.frame with 12 rows (samples) and 2 columns (sample identifier and condition):
+A data.frame with 12 rows (samples) and 2 columns (sample identifier
+  and condition):
 \describe{
   \item{SampleID}{Sample identifier (matches column headers in pep_edata)}
   \item{Condition}{Character string indicating either "Infection" or "Mock"}

@@ -17,8 +17,15 @@ A data.frame with 12328 rows (mass tags) and 6 columns:
 See details of \code{\link{pmartRdata}} for relevant grant numbers.
 }
 \description{
-A dataset containing the peptide metadata (e.g. mapping from peptide to proteins) from a study examining the effect of inhalation endotoxin exposure and obesity on lung inflammation in mice.  This is a subset taken from the full data.
+A dataset containing the peptide metadata (e.g. mapping from peptide to
+proteins) from a study examining the effect of inhalation endotoxin exposure
+and obesity on lung inflammation in mice.  This is a subset taken from the
+full data.
 }
 \references{
-Tilton, S. C.; Waters, K. M.; Karin, N. J.; Webb-Robertson, B. J.; Zangar, R. C.; Lee, K. M.; Bigelow, D. J.; Pounds, J. G.; Corley, R. A., \emph{Diet-induced obesity reprograms the inflammatory response of the murine lung to inhaled endotoxin}. Toxicol Appl Pharmacol 2013, 267 (2), 137-48.
+Tilton, S. C.; Waters, K. M.; Karin, N. J.; Webb-Robertson, B.
+  J.; Zangar, R. C.; Lee, K. M.; Bigelow, D. J.; Pounds, J. G.; Corley, R.
+  A., \emph{Diet-induced obesity reprograms the inflammatory response of the
+  murine lung to inhaled endotoxin}. Toxicol Appl Pharmacol 2013, 267 (2),
+  137-48.
 }

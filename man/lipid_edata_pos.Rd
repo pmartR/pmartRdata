@@ -4,7 +4,8 @@
 \alias{lipid_edata_pos}
 \title{Positive Ion Lipidomics Expression Data (e_data)}
 \format{
-A data.frame with 146 rows (lipids) and 12 columns (lipid identifier and samples):
+A data.frame with 146 rows (lipids) and 12 columns (lipid identifier
+  and samples):
 \describe{
   \item{LipidCommonName}{Lipid common name}
   \item{Mock*}{Three columns of mock infected samples}
@@ -12,8 +13,12 @@ A data.frame with 146 rows (lipids) and 12 columns (lipid identifier and samples
 }
 }
 \source{
-See details of \code{\link{pmartRdata}} for relevant grant numbers. Data is also available on MassIVE (massive.ucsd.edu) with dataset id MSV000079154.
+See details of \code{\link{pmartRdata}} for relevant grant numbers.
+  Data is also available on MassIVE (massive.ucsd.edu) with dataset id
+  MSV000079154.
 }
 \description{
-A dataset containing the quantified mass spectra for 146 lipids collected on a Thermo LTQ-Orbitrap Velos Mass Spectrometer (Thermo Fisher Corporation, San Jose, CA, USA) in positive ion mode.
+A dataset containing the quantified mass spectra for 146 lipids collected on
+a Thermo LTQ-Orbitrap Velos Mass Spectrometer (Thermo Fisher Corporation, San
+Jose, CA, USA) in positive ion mode.
 }
