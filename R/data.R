@@ -111,6 +111,68 @@ NULL
 #' @name lipid_object_pos
 NULL
 
+#' Negative Ion Lipidomics Expression Data (e_data)
+#'
+#' A dataset containing the quantified mass spectra for 143 lipids collected on
+#' a Thermo LTQ-Orbitrap Velos Mass Spectrometer (Thermo Fisher Corporation, San
+#' Jose, CA, USA) in negative ion mode.
+#'
+#' @format A data.frame with 143 rows (lipids) and 12 columns (lipid identifier
+#'   and samples):
+#' \describe{
+#'   \item{LipidCommonName}{Lipid common name}
+#'   \item{Mock*}{Three columns of mock infected samples}
+#'   \item{Infection*}{Eight columns of infected samples}
+#' }
+#' @source See details of \code{\link{pmartRdata}} for relevant grant numbers.
+#'   Data is also available on MassIVE (massive.ucsd.edu) with dataset id
+#'   MSV000079154.
+#' @rdname lipid_edata_neg
+#' @name lipid_edata_neg
+NULL
+
+
+#' Negative Ion Lipidomics Sample Feature Data (f_data)
+#'
+#' A dataset containing the sample metadata.
+#'
+#' @format A data.frame with 11 rows (samples) and 2 columns (sample identifier
+#'   and condition):
+#' \describe{
+#'   \item{SampleID}{Sample identifier (matches column headers in lipid_edata)}
+#'   \item{Condition}{Character string indicating either "Infection" or "Mock"}
+#' }
+#' @source See details of \code{\link{pmartRdata}} for relevant grant numbers.
+#'   Data is also available on MassIVE (massive.ucsd.edu) with dataset id
+#'   MSV000079154.
+#' @rdname lipid_fdata_neg
+#' @name lipid_fdata_neg
+NULL
+
+
+#' Negative Ion Lipidomics Data Object of Class lipidData
+#'
+#' An S3 object of class lipidData
+#'
+#' @format A lipidData object (see \code{\link[pmartR]{as.lipidData}} for
+#'   details)
+#' \describe{
+#'   \item{e_data}{a \eqn{p \times n + 1} data.frame of expression data, where
+#'   \eqn{p} is the number of lipids observed and \eqn{n} is the number of
+#'   samples. Each row corresponds to data for each lipid}
+#'   \item{f_data}{a data.frame with \eqn{n} rows. Each row corresponds to a
+#'   sample with one column giving the unique sample identifiers found in e_data
+#'   column names and other columns providing qualitative and/or quantitative
+#'   traits of each sample.}
+#'   \item{e_meta}{NULL}
+#' }
+#' @source See details of \code{\link{pmartRdata}} for relevant grant numbers.
+#'   Data is also available on MassIVE (massive.ucsd.edu) with dataset id
+#'   MSV000079154.
+#' @rdname lipid_object_neg
+#' @name lipid_object_neg
+NULL
+
 # Metabolite data --------------------------------------------------------------
 
 #' Metabolomics Expression Data (e_data)
