@@ -4,17 +4,22 @@
 \alias{techrep_edata}
 \title{Peptide-level Expression Data (e_data) with technical replicates}
 \format{
-A data.frame with 21,802 rows (peptides) and 65 columns (peptide identifier and LC-MS runs).  Column names have the following tags:
+A data.frame with 21,802 rows (peptides) and 65 columns (peptide
+  identifier and LC-MS runs).  Column names have the following tags:
 \describe{
   \item{Mass_Tag_ID}{Peptide mass tag identifier}
-  \item{1:0, 1:7}{Indicators representing dilutions of mouse plasma to Shewanella oneidensis MR-1}
-  \item{Rep1, Rep2}{Indicators of technical replicates within a biological sample}
+  \item{1:0, 1:7}{Indicators representing dilutions of mouse plasma to
+  Shewanella oneidensis MR-1}
+  \item{Rep1, Rep2}{Indicators of technical replicates within a biological
+  sample}
 }
 }
 \source{
 See details of \code{\link{pmartRdata}} for relevant grant numbers.
 }
 \description{
-A dataset containing the quantified mass spectra for 21,802 unique peptides collected on a Thermo LTQ-Orbitrap Velos Mass Spectrometer (Thermo Fisher Corporation, San Jose, CA, USA).
-Columns represent technical replicates within each of 32 biological samples (2 technical replicates per sample).
+A dataset containing the quantified mass spectra for 21,802 unique peptides
+collected on a Thermo LTQ-Orbitrap Velos Mass Spectrometer (Thermo Fisher
+Corporation, San Jose, CA, USA). Columns represent technical replicates
+within each of 32 biological samples (2 technical replicates per sample).
 }
