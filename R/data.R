@@ -2,10 +2,18 @@
 
 #' Isobaric Peptide Expression Data (e_data)
 #'
-#' A dataset containing simulated data from an iTRAQ instrument.
+#' A dataset containing a subset of de-identified data from a multi-omic study
+#' (labeled proteomics, lipidomics, and RNAseq data). This data has samples from
+#' three different strains of a virus.
 #'
-#' @format A data.frame with 1993 rows (peptides) and 13 columns (peptide
+#' @format A data frame with 215,220 rows (peptides) and 51 columns (peptide
 #'   identifier and samples):
+#' \describe{
+#'   \item{Peptide}{Peptide name}
+#'   \item{StrainA*}{Columns for Strain A samples}
+#'   \item{StrainB*}{Columns for Strain B samples}
+#'   \item{StrainC*}{Columns for Strain C samples}
+#' }
 #' @rdname isobaric_edata
 #' @name isobaric_edata
 NULL
@@ -14,34 +22,52 @@ NULL
 #'
 #' A dataset containing the sample metadata.
 #'
-#' @format A data.frame with 12 rows (samples) and 5 columns (sample identifier,
-#'   experiment/plate, channel, reference information, and group information):
+#' @format A data frame with 50 rows (samples) and 6 columns (sample identifier,
+#'   experiment/plate information, and information about each sample):
 #' \describe{
-#'   \item{Sample}{Sample identifier (matches column headers in isobaric_edata)}
-#'   \item{Set}{iTRAQ plate/experiment information}
-#'   \item{iTRAQ.Channel}{Information on which channel a sample was run on}
-#'   \item{Reference}{Indicator of whether a sample is a reference sample or not}
-#'   \item{Group}{Group/treatment information}
+#'   \item{SampleID}{Sample identifier (matches column headers in isobaric_edata)}
+#'   \item{Plex}{iTRAQ plate/experiment information}
+#'   \item{Virus}{Strain of virus for each sample}
+#'   \item{Donor}{Which donor the sample originated from}
+#'   \item{Replicate}{Biological replicate number}
+#'   \item{TMT_day_plex_order}{The day, plex, and order on plate for the sample}
 #' }
 #' @rdname isobaric_fdata
 #' @name isobaric_fdata
 NULL
 
+
+#' Isobaric Peptide Feature Data (e_meta)
+#'
+#' A dataset containing the biomolecule metadata, a mapping of peptides to proteins.
+#'
+#' @format A data frame with 215,220 rows (peptides) and 2 columns:
+#' \describe{
+#'   \item{Protein}{Protein identifier}
+#'   \item{Peptide}{Peptide identifier}
+#' }
+#' @rdname isobaric_emeta
+#' @name isobaric_emeta
+NULL
+
+
 #' Isobaric Data Object of Class isobaricpepData
 #'
-#' An S3 object of class isobaricpepData
+#' An S3 object of class isobaricpepData from a multi-omic study
+#' (labeled proteomics, lipidomics, and RNAseq data). This data has samples from
+#' three different strains of a virus.
 #'
 #' @format A isobaricpepData object (see
 #'   \code{\link[pmartR]{as.isobaricpepData}} for details)
 #' \describe{
-#'   \item{e_data}{a \eqn{p \times n + 1} data.frame of expression data, where
+#'   \item{e_data}{a \eqn{p \times n + 1} data frame of expression data, where
 #'   \eqn{p} is the number of peptides observed and \eqn{n} is the number of
 #'   samples. Each row corresponds to data for each peptide}
-#'   \item{f_data}{a data.frame with \eqn{n} rows. Each row corresponds to a
+#'   \item{f_data}{a data frame with \eqn{n} rows. Each row corresponds to a
 #'   sample with one column giving the unique sample identifiers found in e_data
 #'   column names and other columns providing qualitative and/or quantitative
 #'   traits of each sample.}
-#'   \item{e_meta}{NULL}
+#'   \item{e_meta}{a data frame containing biomolecule metadata}
 #' }
 #' @rdname isobaric_object
 #' @name isobaric_object
@@ -51,22 +77,20 @@ NULL
 
 #' Positive Ion Lipidomics Expression Data (e_data)
 #'
-#' A dataset containing the quantified mass spectra for 146 lipids collected on
-#' a Thermo LTQ-Orbitrap Velos Mass Spectrometer (Thermo Fisher Corporation, San
-#' Jose, CA, USA) in positive ion mode.
+#' A dataset containing a subset of de-identified data from a multi-omic study
+#' (labeled proteomics, lipidomics, and RNAseq data). This data has samples from
+#' three different strains of a virus.
 #'
-#' @format A data.frame with 146 rows (lipids) and 12 columns (lipid identifier
+#' @format A data.frame with 275 rows (lipids) and 46 columns (lipid identifier
 #'   and samples):
 #' \describe{
-#'   \item{LipidCommonName}{Lipid common name}
-#'   \item{Mock*}{Three columns of mock infected samples}
-#'   \item{Infection*}{Eight columns of infected samples}
+#'   \item{Lipid}{Lipid common name}
+#'   \item{StrainA*}{Columns for Strain A samples}
+#'   \item{StrainB*}{Columns for Strain B samples}
+#'   \item{StrainC*}{Columns for Strain C samples}
 #' }
-#' @source See details of \code{\link{pmartRdata}} for relevant grant numbers.
-#'   Data is also available on MassIVE (massive.ucsd.edu) with dataset id
-#'   MSV000079154.
-#' @rdname lipid_edata_pos
-#' @name lipid_edata_pos
+#' @rdname lipid_pos_edata
+#' @name lipid_pos_edata
 NULL
 
 
@@ -78,57 +102,67 @@ NULL
 #'   and condition):
 #' \describe{
 #'   \item{SampleID}{Sample identifier (matches column headers in e_data)}
-#'   \item{Condition}{Character string indicating either "Infection" or "Mock"}
+#'   \item{Virus}{Strain of virus for each sample}
+#'   \item{Donor}{Which donor the sample originated from}
+#'   \item{Replicate}{Biological replicate number}
 #' }
-#' @source See details of \code{\link{pmartRdata}} for relevant grant numbers.
-#'   Data is also available on MassIVE (massive.ucsd.edu) with dataset id
-#'   MSV000079154.
-#' @rdname lipid_fdata_pos
-#' @name lipid_fdata_pos
+#' @rdname lipid_pos_fdata
+#' @name lipid_pos_fdata
 NULL
 
+#' Positive Ion Lipidomics Feature Data (e_meta)
+#'
+#' A dataset containing biomolecule metadata.
+#'
+#' @format A data frame with 275 rows (peptides) and 3 columns:
+#' \describe{
+#'   \item{Lipid}{Lipid identifier}
+#'   \item{Row}{Lipid row}
+#'   \item{Retention_Time}{Lipid retention time}
+#' }
+#' @rdname lipid_pos_emeta
+#' @name lipid_pos_emeta
+NULL
 
 #' Positive Ion Lipidomics Data Object of Class lipidData
 #'
-#' An S3 object of class lipidData
+#' An S3 object of class lipidData from a multi-omic study
+#' (labeled proteomics, lipidomics, and RNAseq data). This data has samples from
+#' three different strains of a virus.
 #'
 #' @format A lipidData object (see \code{\link[pmartR]{as.lipidData}} for
 #'   details)
 #' \describe{
-#'   \item{e_data}{a \eqn{p \times n + 1} data.frame of expression data, where
+#'   \item{e_data}{a \eqn{p \times n + 1} data frame of expression data, where
 #'   \eqn{p} is the number of lipids observed and \eqn{n} is the number of
 #'   samples. Each row corresponds to data for each lipid}
-#'   \item{f_data}{a data.frame with \eqn{n} rows. Each row corresponds to a
+#'   \item{f_data}{a data frame with \eqn{n} rows. Each row corresponds to a
 #'   sample with one column giving the unique sample identifiers found in e_data
 #'   column names and other columns providing qualitative and/or quantitative
 #'   traits of each sample.}
-#'   \item{e_meta}{NULL}
+#'   \item{e_meta}{a data frame containing biomolecule information}
 #' }
-#' @source See details of \code{\link{pmartRdata}} for relevant grant numbers.
-#'   Data is also available on MassIVE (massive.ucsd.edu) with dataset id
-#'   MSV000079154.
-#' @rdname lipid_object_pos
-#' @name lipid_object_pos
+#' @rdname lipid_pos_object
+#' @name lipid_pos_object
 NULL
+
 
 #' Negative Ion Lipidomics Expression Data (e_data)
 #'
-#' A dataset containing the quantified mass spectra for 143 lipids collected on
-#' a Thermo LTQ-Orbitrap Velos Mass Spectrometer (Thermo Fisher Corporation, San
-#' Jose, CA, USA) in negative ion mode.
+#' A dataset containing a subset of de-identified data from a multi-omic study
+#' (labeled proteomics, lipidomics, and RNAseq data). This data has samples from
+#' three different strains of a virus.
 #'
-#' @format A data.frame with 143 rows (lipids) and 12 columns (lipid identifier
+#' @format A data.frame with 275 rows (lipids) and 46 columns (lipid identifier
 #'   and samples):
 #' \describe{
-#'   \item{LipidCommonName}{Lipid common name}
-#'   \item{Mock*}{Three columns of mock infected samples}
-#'   \item{Infection*}{Eight columns of infected samples}
+#'   \item{Lipid}{Lipid common name}
+#'   \item{StrainA*}{Columns for Strain A samples}
+#'   \item{StrainB*}{Columns for Strain B samples}
+#'   \item{StrainC*}{Columns for Strain C samples}
 #' }
-#' @source See details of \code{\link{pmartRdata}} for relevant grant numbers.
-#'   Data is also available on MassIVE (massive.ucsd.edu) with dataset id
-#'   MSV000079154.
-#' @rdname lipid_edata_neg
-#' @name lipid_edata_neg
+#' @rdname lipid_neg_edata
+#' @name lipid_neg_edata
 NULL
 
 
@@ -140,38 +174,50 @@ NULL
 #'   and condition):
 #' \describe{
 #'   \item{SampleID}{Sample identifier (matches column headers in e_data)}
-#'   \item{Condition}{Character string indicating either "Infection" or "Mock"}
+#'   \item{Virus}{Strain of virus for each sample}
+#'   \item{Donor}{Which donor the sample originated from}
+#'   \item{Replicate}{Biological replicate number}
 #' }
-#' @source See details of \code{\link{pmartRdata}} for relevant grant numbers.
-#'   Data is also available on MassIVE (massive.ucsd.edu) with dataset id
-#'   MSV000079154.
-#' @rdname lipid_fdata_neg
-#' @name lipid_fdata_neg
+#' @rdname lipid_neg_fdata
+#' @name lipid_neg_fdata
 NULL
 
+#' Negative Ion Lipidomics Feature Data (e_meta)
+#'
+#' A dataset containing biomolecule metadata.
+#'
+#' @format A data frame with 275 rows (peptides) and 3 columns:
+#' \describe{
+#'   \item{Lipid}{Lipid identifier}
+#'   \item{Row}{Lipid row}
+#'   \item{Retention_Time}{Lipid retention time}
+#' }
+#' @rdname lipid_neg_emeta
+#' @name lipid_neg_emeta
+NULL
 
 #' Negative Ion Lipidomics Data Object of Class lipidData
 #'
-#' An S3 object of class lipidData
+#' An S3 object of class lipidData from a multi-omic study
+#' (labeled proteomics, lipidomics, and RNAseq data). This data has samples from
+#' three different strains of a virus.
 #'
 #' @format A lipidData object (see \code{\link[pmartR]{as.lipidData}} for
 #'   details)
 #' \describe{
-#'   \item{e_data}{a \eqn{p \times n + 1} data.frame of expression data, where
+#'   \item{e_data}{a \eqn{p \times n + 1} data frame of expression data, where
 #'   \eqn{p} is the number of lipids observed and \eqn{n} is the number of
 #'   samples. Each row corresponds to data for each lipid}
-#'   \item{f_data}{a data.frame with \eqn{n} rows. Each row corresponds to a
+#'   \item{f_data}{a data frame with \eqn{n} rows. Each row corresponds to a
 #'   sample with one column giving the unique sample identifiers found in e_data
 #'   column names and other columns providing qualitative and/or quantitative
 #'   traits of each sample.}
-#'   \item{e_meta}{NULL}
+#'   \item{e_meta}{a data frame containing biomolecule information}
 #' }
-#' @source See details of \code{\link{pmartRdata}} for relevant grant numbers.
-#'   Data is also available on MassIVE (massive.ucsd.edu) with dataset id
-#'   MSV000079154.
-#' @rdname lipid_object_neg
-#' @name lipid_object_neg
+#' @rdname lipid_neg_object
+#' @name lipid_neg_object
 NULL
+
 
 # Metabolite data --------------------------------------------------------------
 
