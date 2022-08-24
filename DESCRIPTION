@@ -9,7 +9,7 @@ Description: Data from a systems virology study with unlabeled proteomics, metab
 License: CCO
 Depends: R (>= 2.15)
 LazyData: TRUE
-RoxygenNote: 7.1.1
+RoxygenNote: 7.2.1
 Encoding: UTF-8
 URL: https://github.com/pmartR/pmartRdata
 BugReports: https://github.com/pmartR/pmartRdata/issues
