@@ -4,7 +4,9 @@
 #'
 #' A dataset containing a subset of de-identified data from a multi-omic study
 #' (labeled proteomics, lipidomics, and RNAseq data). This data has samples from
-#' three different strains of a virus.
+#' three different strains of a virus. Since this is only a subset of data from
+#' this study, the number of samples is not identical across plexes, and the
+#' plex names are not sequential.
 #'
 #' @format A data frame with 215,220 rows (peptides) and 51 columns (peptide
 #'   identifier and samples):
