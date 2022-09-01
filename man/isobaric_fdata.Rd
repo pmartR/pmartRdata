@@ -4,14 +4,15 @@
 \alias{isobaric_fdata}
 \title{Isobaric Peptide Feature Data (f_data)}
 \format{
-A data.frame with 12 rows (samples) and 5 columns (sample identifier,
-  experiment/plate, channel, reference information, and group information):
+A data frame with 50 rows (samples) and 6 columns (sample identifier,
+  experiment/plate information, and information about each sample):
 \describe{
-  \item{Sample}{Sample identifier (matches column headers in isobaric_edata)}
-  \item{Set}{iTRAQ plate/experiment information}
-  \item{iTRAQ.Channel}{Information on which channel a sample was run on}
-  \item{Reference}{Indicator of whether a sample is a reference sample or not}
-  \item{Group}{Group/treatment information}
+  \item{SampleID}{Sample identifier (matches column headers in isobaric_edata)}
+  \item{Plex}{iTRAQ plate/experiment information}
+  \item{Virus}{Strain of virus for each sample}
+  \item{Donor}{Which donor the sample originated from}
+  \item{Replicate}{Biological replicate number}
+  \item{TMT_day_plex_order}{The day, plex, and order on plate for the sample}
 }
 }
 \description{

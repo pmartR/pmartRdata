@@ -4,9 +4,19 @@
 \alias{isobaric_edata}
 \title{Isobaric Peptide Expression Data (e_data)}
 \format{
-A data.frame with 1993 rows (peptides) and 13 columns (peptide
+A data frame with 215,220 rows (peptides) and 51 columns (peptide
   identifier and samples):
+\describe{
+  \item{Peptide}{Peptide name}
+  \item{StrainA*}{Columns for Strain A samples}
+  \item{StrainB*}{Columns for Strain B samples}
+  \item{StrainC*}{Columns for Strain C samples}
+}
 }
 \description{
-A dataset containing simulated data from an iTRAQ instrument.
+A dataset containing a subset of de-identified data from a multi-omic study
+(labeled proteomics, lipidomics, and RNAseq data). This data has samples from
+three different strains of a virus. Since this is only a subset of data from
+this study, the number of samples is not identical across plexes, and the
+plex names are not sequential.
 }
