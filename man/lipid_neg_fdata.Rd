@@ -4,7 +4,7 @@
 \alias{lipid_neg_fdata}
 \title{Negative Ion Lipidomics Sample Feature Data (f_data)}
 \format{
-A data.frame with 11 rows (samples) and 2 columns (sample identifier
+A data.frame with 45 rows (samples) and 2 columns (sample identifier
   and condition):
 \describe{
   \item{SampleID}{Sample identifier (matches column headers in e_data)}
