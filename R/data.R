@@ -172,7 +172,7 @@ NULL
 #'
 #' A dataset containing the sample metadata.
 #'
-#' @format A data.frame with 11 rows (samples) and 2 columns (sample identifier
+#' @format A data.frame with 45 rows (samples) and 2 columns (sample identifier
 #'   and condition):
 #' \describe{
 #'   \item{SampleID}{Sample identifier (matches column headers in e_data)}
@@ -219,6 +219,80 @@ NULL
 #' @rdname lipid_neg_object
 #' @name lipid_neg_object
 NULL
+
+
+# RNAseq data --------------------------------------------------------------
+
+#' RNAseq Expression Data (e_data)
+#'
+#' A dataset containing a subset of de-identified data from a multi-omic study
+#' (labeled proteomics, lipidomics, and RNAseq data). This data has samples from
+#' three different strains of a virus.
+#'
+#' @format A data.frame with 49,568 rows (transcripts) and 46 columns (transcript identifier
+#'   and samples) containing transcript counts:
+#' \describe{
+#'   \item{Transcript}{Transcript name}
+#'   \item{StrainA*}{Columns for Strain A samples}
+#'   \item{StrainB*}{Columns for Strain B samples}
+#'   \item{StrainC*}{Columns for Strain C samples}
+#' }
+#' @rdname rnaseq_edata
+#' @name rnaseq_edata
+NULL
+
+
+#' RNAseq Sample Feature Data (f_data)
+#'
+#' A dataset containing the sample metadata.
+#'
+#' @format A data.frame with 45 rows (samples) and 4 columns (sample identifier
+#'   and condition):
+#' \describe{
+#'   \item{SampleID}{Sample identifier (matches column headers in e_data)}
+#'   \item{Virus}{Strain of virus for each sample}
+#'   \item{Donor}{Which donor the sample originated from}
+#'   \item{Replicate}{Biological replicate number}
+#' }
+#' @rdname rnaseq_fdata
+#' @name rnaseq_fdata
+NULL
+
+#' RNAseq Feature Data (e_meta)
+#'
+#' A dataset containing biomolecule metadata.
+#'
+#' @format A data frame with 53,908 rows (transcript-by-gene combinations) and 2 columns:
+#' \describe{
+#'   \item{Transcript}{Transcript name}
+#'   \item{Gene}{Gene name}
+#' }
+#' @rdname rnaseq_emeta
+#' @name rnaseq_emeta
+NULL
+
+#' RNAseq Data Object of Class seqData
+#' An S3 object of class seqData from a multi-omic study
+#' (labeled proteomics, lipidomics, and RNAseq data). This data has samples from
+#' three different strains of a virus.
+#'
+#' @format A seqData object (see \code{\link[pmartR]{as.seqData}} for
+#'   details)
+#' \describe{
+#'   \item{e_data}{a \eqn{p \times n + 1} data frame of count data, where
+#'   \eqn{p} is the number of transcripts observed and \eqn{n} is the number of
+#'   samples. Each row corresponds to data for each transcript}
+#'   \item{f_data}{a data frame with \eqn{n} rows. Each row corresponds to a
+#'   sample with one column giving the unique sample identifiers found in e_data
+#'   column names and other columns providing qualitative and/or quantitative
+#'   traits of each sample.}
+#'   \item{e_meta}{a data frame containing biomolecule information}
+#' }
+#' @rdname rnaseq_object
+#' @name rnaseq_object
+NULL
+
+
 
 
 # Metabolite data --------------------------------------------------------------

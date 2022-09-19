@@ -2,9 +2,11 @@
 ## Kelly Stratton ----------------------------------------------------------- ##
 ## Add new datasets to replace previous: 
 ##          pepData
-##          isobaricpepData
-##          proData
+##          proData         
+##          metabData
 ##          lipidData
+##          isobaricpepData
+##          seqData
 ## and their associated components (e_data, f_data, e_meta)
 ## -------------------------------------------------------------------------- ##
 
@@ -24,7 +26,6 @@ usethis::use_data(isobaric_edata, overwrite = TRUE)
 usethis::use_data(isobaric_emeta, overwrite = TRUE)
 usethis::use_data(isobaric_fdata, overwrite = TRUE)
 usethis::use_data(isobaric_object, overwrite = TRUE)
-
 ## -------------------------------------------------------------------------- ##
 
 
@@ -43,7 +44,6 @@ usethis::use_data(lipid_neg_edata, overwrite = TRUE)
 usethis::use_data(lipid_neg_emeta, overwrite = TRUE)
 usethis::use_data(lipid_neg_fdata, overwrite = TRUE)
 usethis::use_data(lipid_neg_object, overwrite = TRUE)
-
 ## -------------------------------------------------------------------------- ##
 
 
@@ -62,6 +62,22 @@ usethis::use_data(lipid_pos_edata, overwrite = TRUE)
 usethis::use_data(lipid_pos_emeta, overwrite = TRUE)
 usethis::use_data(lipid_pos_fdata, overwrite = TRUE)
 usethis::use_data(lipid_pos_object, overwrite = TRUE)
-
 ## -------------------------------------------------------------------------- ##
 
+
+## -------------------------------------------------------------------------- ##
+## RNAseq 
+
+# read in the data from share drive
+mydir <- "/Volumes/iPMART/Example_Data/Unicorn/RNAseq/Processed_Data/"
+rnaseq_edata <- readRDS(paste0(mydir, "rnaseq_edata.RDS"))
+rnaseq_emeta <- readRDS(paste0(mydir, "rnaseq_emeta.RDS"))
+rnaseq_fdata <- readRDS(paste0(mydir, "rnaseq_fdata.RDS"))
+rnaseq_object <- readRDS(paste0(mydir, "rnaseq_object.RDS"))
+
+# save into the pmartRdata package
+usethis::use_data(rnaseq_edata, overwrite = TRUE)
+usethis::use_data(rnaseq_emeta, overwrite = TRUE)
+usethis::use_data(rnaseq_fdata, overwrite = TRUE)
+usethis::use_data(rnaseq_object, overwrite = TRUE)
+## -------------------------------------------------------------------------- ##
