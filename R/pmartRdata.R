@@ -1,9 +1,10 @@
 #' pmartRdata
 #'
-#' The pmartRdata package contains four sets of example mass spectrometry data:
-#' proteomics (both peptide- and protein-level data), metabolomics, and
-#' lipidomics.
-#'
+#' The pmartRdata package contains a number of example datasets compatible with
+#' the pmartR package. These include unlabeled and labeled peptide data,
+#' proteomics data, GC-MS metabolomics, NMR metabolomics, LC-MS lipidomics (both
+#' negative and positive ionization modes).
+#' 
 #'
 #' @section Data types:
 #'

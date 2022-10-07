@@ -81,3 +81,18 @@ usethis::use_data(rnaseq_emeta, overwrite = TRUE)
 usethis::use_data(rnaseq_fdata, overwrite = TRUE)
 usethis::use_data(rnaseq_object, overwrite = TRUE)
 ## -------------------------------------------------------------------------- ##
+
+
+
+
+mydir <- "/Volumes/Projects-1/Projects/Misc PML Processing/Burnum-Johnson_Kristin/Myatt Pregnancy data with Kristin/Proteomics/Data/"
+
+# read in the files #
+edata <- read.csv(file = paste0(mydir, "peptideTable.csv"), check.names = FALSE, stringsAsFactors = FALSE)
+fdata <- read.csv(file = paste0(mydir, "proteomics_fdata.csv"), check.names = FALSE, stringsAsFactors = FALSE)
+emeta <- edata[, 1:3]
+edata <- edata[, -c(2,3)]
+
+all(fdata$SampleID == names(edata)[-1]) # TRUE - the order matches between fdata and edata
+
+mydata <- as.pepData(e_data = edata, f_data = fdata, e_meta = emeta, edata_cname = "Peptide",  fdata_cname = "SampleID", emeta_cname = "RazorProtein", data_scale = "abundance", check.names=FALSE)

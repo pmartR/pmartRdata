@@ -299,20 +299,19 @@ NULL
 
 #' Metabolomics Expression Data (e_data)
 #'
-#' A dataset containing the quantified mass spectra for 80 metabolites collected
-#' on an Agilent GC 7890A coupled with MSD 5975C Mass Spectrometer (Agilent
-#' Technologies, Santa Clara, CA, USA).
+#' A dataset containing the quantified mass spectra for 247 metabolites across
+#' 50 samples, collected via GC-MS.
 #'
-#' @format A data.frame with 80 rows (metabolites) and 13 columns (metabolite
+#' @format A data.frame with 247 rows (metabolites) and 51 columns (metabolite
 #'   identifier and samples):
 #' \describe{
 #'   \item{Metabolite}{Metabolite name}
-#'   \item{Mock*}{Three columns of mock infected samples}
-#'   \item{Infection*}{Nine columns of infected samples}
+#'   \item{Sample_*_Phenotype1_*}{Columns for samples belonging to the Phenotype 1 group}
+#'   \item{Sample_*_Phenotype2_*}{Columns for samples belonging to the Phenotype 2 group}
+#'   \item{Sample_*_Phenotype3_*}{Columns for samples belonging to the Phenotype 3 group}
 #' }
-#' @source See details of \code{\link{pmartRdata}} for relevant grant numbers.
-#'   Data is also available on MassIVE (massive.ucsd.edu) with dataset id
-#'   MSV000079153.
+#' @source Data come from a study that has not yet been published. Further
+#'   details will be available after publication.
 #' @rdname metab_edata
 #' @name metab_edata
 NULL
@@ -322,15 +321,16 @@ NULL
 #'
 #' A dataset containing the sample metadata.
 #'
-#' @format A data.frame with 12 rows (samples) and 2 columns (sample identifier
+#' @format A data.frame with 50 rows (samples) and 4 columns (sample identifier
 #'   and condition):
 #' \describe{
-#'   \item{SampleID}{Sample identifier (matches column headers in lipid_edata)}
-#'   \item{Condition}{Character string indicating either "Infection" or "Mock"}
+#'   \item{SampleID}{Sample identifier (matches column headers in metab_edata)}
+#'   \item{Phenotype}{Character string indicating Phenotype 1, 2, or 3}
+#'   \item{SecondPhenotype}{Character string indicating A or B}
+#'   \item{Characteristic}{Numeric value corresponding to a measured characteristic for each sample}
 #' }
-#' @source See details of \code{\link{pmartRdata}} for relevant grant numbers.
-#'   Data is also available on MassIVE (massive.ucsd.edu) with dataset id
-#'   MSV000079153.
+#' @source Data come from a study that has not yet been published. Further
+#'   details will be available after publication.
 #' @rdname metab_fdata
 #' @name metab_fdata
 NULL
@@ -352,9 +352,8 @@ NULL
 #'   traits of each sample.}
 #'   \item{e_meta}{NULL}
 #' }
-#' @source See details of \code{\link{pmartRdata}} for relevant grant numbers.
-#'   Data is also available on MassIVE (massive.ucsd.edu) with dataset id
-#'   MSV000079153.
+#' @source Data come from a study that has not yet been published. Further
+#'   details will be available after publication.
 #' @rdname metab_object
 #' @name metab_object
 NULL
