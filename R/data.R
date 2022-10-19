@@ -464,8 +464,8 @@ NULL
 #'   sample}
 #' }
 #' @source See details of \code{\link{pmartRdata}} for relevant grant numbers.
-#' @rdname techrep_edata
-#' @name techrep_edata
+#' @rdname pep_techrep_edata
+#' @name pep_techrep_edata
 NULL
 
 #' Peptide-level Technical Replicate Feature Data (f_data)
@@ -484,8 +484,8 @@ NULL
 #'   belong to the same biological sample}
 #' }
 #' @source  See details of \code{\link{pmartRdata}} for relevant grant numbers.
-#' @rdname techrep_fdata
-#' @name techrep_fdata
+#' @rdname pep_techrep_fdata
+#' @name pep_techrep_fdata
 NULL
 
 #' Peptide-level Data Object of Class pepData with technical replicates
@@ -508,8 +508,8 @@ NULL
 #'   \item{e_meta}{NULL}
 #' }
 #' @source See details of \code{\link{pmartRdata}} for relevant grant numbers.
-#' @rdname techrep_pep_object
-#' @name techrep_pep_object
+#' @rdname pep_techrep_object
+#' @name pep_techrep_object
 NULL
 
 #' Peptide-level Expression Data (e_data) from a cancer/obesity study on mice.

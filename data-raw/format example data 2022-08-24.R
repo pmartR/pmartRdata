@@ -96,3 +96,42 @@ edata <- edata[, -c(2,3)]
 all(fdata$SampleID == names(edata)[-1]) # TRUE - the order matches between fdata and edata
 
 mydata <- as.pepData(e_data = edata, f_data = fdata, e_meta = emeta, edata_cname = "Peptide",  fdata_cname = "SampleID", emeta_cname = "RazorProtein", data_scale = "abundance", check.names=FALSE)
+
+
+
+## October 2022 ------------------------------------------------------------- ##
+## Kelly Stratton ----------------------------------------------------------- ##
+## Rename previous datasets: 
+##          nmrData
+##          techrep         
+## and their associated components (e_data, f_data, e_meta)
+## -------------------------------------------------------------------------- ##
+
+data("nmr_edata_identified")
+data("nmr_emeta_identified")
+data("nmr_fdata_identified")
+data("nmr_object_identified")
+
+nmr_identified_edata <- nmr_edata_identified
+nmr_identified_emeta <- nmr_emeta_identified
+nmr_identified_fdata <- nmr_fdata_identified
+nmr_identified_object <- nmr_object_identified
+
+usethis::use_data(nmr_identified_edata)
+usethis::use_data(nmr_identified_emeta)
+usethis::use_data(nmr_identified_fdata)
+usethis::use_data(nmr_identified_object)
+
+
+
+data("techrep_edata")
+data("techrep_fdata")
+data("techrep_pep_object")
+
+pep_techrep_edata <- techrep_edata
+pep_techrep_fdata <- techrep_fdata
+pep_techrep_object <- techrep_pep_object
+
+usethis::use_data(pep_techrep_edata)
+usethis::use_data(pep_techrep_fdata)
+usethis::use_data(pep_techrep_object)
