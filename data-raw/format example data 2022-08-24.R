@@ -83,20 +83,57 @@ usethis::use_data(rnaseq_object, overwrite = TRUE)
 ## -------------------------------------------------------------------------- ##
 
 
+## -------------------------------------------------------------------------- ##
+## GC-MS Metab (Myatt) 
+
+# read in the data from share drive
+mydir <- "/Volumes/iPMART/Example_Data/Myatt_UnlabeledProt_Metab/Metabolomics/Processed_Data/"
+metab_edata <- readRDS(paste0(mydir, "metab_edata.RDS"))
+metab_fdata <- readRDS(paste0(mydir, "metab_fdata.RDS"))
+metab_object <- readRDS(paste0(mydir, "metab_object.RDS"))
+
+# save into the pmartRdata package
+usethis::use_data(metab_edata, overwrite = TRUE)
+usethis::use_data(metab_fdata, overwrite = TRUE)
+usethis::use_data(metab_object, overwrite = TRUE)
+## -------------------------------------------------------------------------- ##
 
 
-mydir <- "/Volumes/Projects-1/Projects/Misc PML Processing/Burnum-Johnson_Kristin/Myatt Pregnancy data with Kristin/Proteomics/Data/"
+## -------------------------------------------------------------------------- ##
+## Pep (Myatt) 
 
-# read in the files #
-edata <- read.csv(file = paste0(mydir, "peptideTable.csv"), check.names = FALSE, stringsAsFactors = FALSE)
-fdata <- read.csv(file = paste0(mydir, "proteomics_fdata.csv"), check.names = FALSE, stringsAsFactors = FALSE)
-emeta <- edata[, 1:3]
-edata <- edata[, -c(2,3)]
+# read in the data from share drive
+mydir <- "/Volumes/iPMART/Example_Data/Myatt_UnlabeledProt_Metab/Proteomics/Processed_Data/"
+pep_edata <- readRDS(paste0(mydir, "pep_edata.RDS"))
+pep_emeta <- readRDS(paste0(mydir, "pep_emeta.RDS"))
+pep_fdata <- readRDS(paste0(mydir, "pep_fdata.RDS"))
+pep_object <- readRDS(paste0(mydir, "pep_object.RDS"))
 
-all(fdata$SampleID == names(edata)[-1]) # TRUE - the order matches between fdata and edata
+# save into the pmartRdata package
+usethis::use_data(pep_edata, overwrite = TRUE)
+usethis::use_data(pep_emeta, overwrite = TRUE)
+usethis::use_data(pep_fdata, overwrite = TRUE)
+usethis::use_data(pep_object, overwrite = TRUE)
+## -------------------------------------------------------------------------- ##
 
-mydata <- as.pepData(e_data = edata, f_data = fdata, e_meta = emeta, edata_cname = "Peptide",  fdata_cname = "SampleID", emeta_cname = "RazorProtein", data_scale = "abundance", check.names=FALSE)
 
+## -------------------------------------------------------------------------- ##
+## Pro (Myatt) 
+
+# read in the data from share drive
+mydir <- "/Volumes/iPMART/Example_Data/Myatt_UnlabeledProt_Metab/Proteomics/Processed_Data/"
+pro_edata <- readRDS(paste0(mydir, "prot_edata.RDS"))
+pro_emeta <- readRDS(paste0(mydir, "prot_emeta.RDS"))
+pro_fdata <- readRDS(paste0(mydir, "prot_fdata.RDS"))
+pro_object <- readRDS(paste0(mydir, "prot_object.RDS"))
+
+
+# save into the pmartRdata package
+usethis::use_data(pro_edata, overwrite = TRUE)
+usethis::use_data(pro_emeta, overwrite = TRUE)
+usethis::use_data(pro_fdata, overwrite = TRUE)
+usethis::use_data(pro_object, overwrite = TRUE)
+## -------------------------------------------------------------------------- ##
 
 
 ## October 2022 ------------------------------------------------------------- ##
