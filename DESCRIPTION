@@ -2,7 +2,7 @@ Package: pmartRdata
 Type: Package
 Title: Mass spectrometry (MS) data
 Version: 2.0.0
-Date: 2016-09-26
+Date: 2022-11-03
 Author: Kelly Stratton [aut], Lisa Bramer [aut], Bobbie-Jo Webb-Robertson [ctb]
 Maintainer: Kelly Stratton <kelly.stratton@pnnl.gov>, Lisa Bramer <lisa.bramer@pnnl.gov>
 Description: Data from a systems virology study with unlabeled proteomics, metabolomics, and lipidomics measurements available, as well as simulated data from a labeled proteomics experiment. Datasets are heavily leveraged by pmartR as example data.
