@@ -18,7 +18,8 @@ A lipidData object (see \code{\link[pmartR]{as.lipidData}} for
 }
 }
 \description{
-An S3 object of class lipidData from a multi-omic study
+These data are part of Experiment 1 (isobaric labeled proteomics, lipidomics,
+and RNAseq data). An S3 object of class lipidData from a multi-omic study
 (labeled proteomics, lipidomics, and RNAseq data). This data has samples from
 three different strains of a virus.
 }

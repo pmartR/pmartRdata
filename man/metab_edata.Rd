@@ -4,21 +4,20 @@
 \alias{metab_edata}
 \title{Metabolomics Expression Data (e_data)}
 \format{
-A data.frame with 80 rows (metabolites) and 13 columns (metabolite
+A data.frame with 250 rows (metabolites) and 51 columns (metabolite
   identifier and samples):
 \describe{
   \item{Metabolite}{Metabolite name}
-  \item{Mock*}{Three columns of mock infected samples}
-  \item{Infection*}{Nine columns of infected samples}
+  \item{Sample_*_Phenotype1_*}{Columns for samples belonging to the Phenotype
+  1 group}
+  \item{Sample_*_Phenotype2_*}{Columns for samples belonging to the Phenotype
+  2 group}
+  \item{Sample_*_Phenotype3_*}{Columns for samples belonging to the Phenotype
+  3 group}
 }
-}
-\source{
-See details of \code{\link{pmartRdata}} for relevant grant numbers.
-  Data is also available on MassIVE (massive.ucsd.edu) with dataset id
-  MSV000079153.
 }
 \description{
-A dataset containing the quantified mass spectra for 80 metabolites collected
-on an Agilent GC 7890A coupled with MSD 5975C Mass Spectrometer (Agilent
-Technologies, Santa Clara, CA, USA).
+These data are part of Experiment 2 (metabolomics, unlabeled peptide and
+associated protein data). A dataset containing the quantified mass spectra
+for 250 metabolites across 50 samples, collected via GC-MS.
 }

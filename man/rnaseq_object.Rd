@@ -2,10 +2,7 @@
 % Please edit documentation in R/data.R
 \name{rnaseq_object}
 \alias{rnaseq_object}
-\title{RNAseq Data Object of Class seqData
-An S3 object of class seqData from a multi-omic study
-(labeled proteomics, lipidomics, and RNAseq data). This data has samples from
-three different strains of a virus.}
+\title{RNAseq Data Object of Class seqData}
 \format{
 A seqData object (see \code{\link[pmartR]{as.seqData}} for
   details)
@@ -21,8 +18,8 @@ A seqData object (see \code{\link[pmartR]{as.seqData}} for
 }
 }
 \description{
-RNAseq Data Object of Class seqData
-An S3 object of class seqData from a multi-omic study
+These data are part of Experiment 1 (isobaric labeled proteomics, lipidomics,
+and RNAseq data). An S3 object of class seqData from a multi-omic study
 (labeled proteomics, lipidomics, and RNAseq data). This data has samples from
 three different strains of a virus.
 }

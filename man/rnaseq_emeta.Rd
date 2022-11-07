@@ -2,14 +2,16 @@
 % Please edit documentation in R/data.R
 \name{rnaseq_emeta}
 \alias{rnaseq_emeta}
-\title{RNAseq Feature Data (e_meta)}
+\title{RNAseq Biomolecule Metadata (e_meta)}
 \format{
-A data frame with 53,908 rows (transcript-by-gene combinations) and 2 columns:
+A data frame with 53,908 rows (transcript-by-gene combinations) and 2
+  columns:
 \describe{
   \item{Transcript}{Transcript name}
   \item{Gene}{Gene name}
 }
 }
 \description{
-A dataset containing biomolecule metadata.
+These data are part of Experiment 1 (isobaric labeled proteomics, lipidomics,
+and RNAseq data). A dataset containing biomolecule metadata.
 }

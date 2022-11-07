@@ -2,7 +2,7 @@
 % Please edit documentation in R/data.R
 \name{rnaseq_fdata}
 \alias{rnaseq_fdata}
-\title{RNAseq Sample Feature Data (f_data)}
+\title{RNAseq Sample Metadata (f_data)}
 \format{
 A data.frame with 45 rows (samples) and 4 columns (sample identifier
   and condition):
@@ -14,5 +14,6 @@ A data.frame with 45 rows (samples) and 4 columns (sample identifier
 }
 }
 \description{
-A dataset containing the sample metadata.
+These data are part of Experiment 1 (isobaric labeled proteomics, lipidomics,
+and RNAseq data). A dataset containing the sample metadata.
 }

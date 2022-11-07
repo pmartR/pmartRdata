@@ -2,10 +2,10 @@
 % Please edit documentation in R/data.R
 \name{rnaseq_edata}
 \alias{rnaseq_edata}
-\title{RNAseq Expression Data (e_data)}
+\title{RNAseq Count Data (e_data)}
 \format{
-A data.frame with 49,568 rows (transcripts) and 46 columns (transcript identifier
-  and samples) containing transcript counts:
+A data.frame with 49,568 rows (transcripts) and 46 columns
+  (transcript identifier and samples) containing transcript counts:
 \describe{
   \item{Transcript}{Transcript name}
   \item{StrainA*}{Columns for Strain A samples}
@@ -14,7 +14,7 @@ A data.frame with 49,568 rows (transcripts) and 46 columns (transcript identifie
 }
 }
 \description{
-A dataset containing a subset of de-identified data from a multi-omic study
-(labeled proteomics, lipidomics, and RNAseq data). This data has samples from
-three different strains of a virus.
+These data are part of Experiment 1 (isobaric labeled proteomics, lipidomics,
+and RNAseq data). These data include samples from three different strains of
+a virus.
 }

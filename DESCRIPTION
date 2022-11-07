@@ -1,13 +1,13 @@
 Package: pmartRdata
 Type: Package
-Title: Mass spectrometry (MS) data
+Title: Example Data for pmartR Package
 Version: 2.0.0
-Date: 2022-11-03
+Date: 2022-11-08
 Author: Kelly Stratton [aut], Lisa Bramer [aut], Bobbie-Jo Webb-Robertson [ctb]
 Maintainer: Kelly Stratton <kelly.stratton@pnnl.gov>, Lisa Bramer <lisa.bramer@pnnl.gov>
-Description: Data from a systems virology study with unlabeled proteomics, metabolomics, and lipidomics measurements available, as well as simulated data from a labeled proteomics experiment. Datasets are heavily leveraged by pmartR as example data.
+Description: This package contains datasets from two multiomics experiments: Experiment 1 includes isobaric labeled peptide data, negative and positive ionization mode lipidomics data, and RNAseq data; Experiment 2 includes unlabeled peptide data, the associated protein data, and metabolomics data. Also included in the package are an NMR dataset and an unlabeled peptide dataset that has technical replicates. These datasets are heavily leveraged by the pmartR package as example data.
 License: CCO
-Depends: R (>= 2.15)
+Depends: R (>= 4.0.0)
 LazyData: TRUE
 RoxygenNote: 7.2.1
 Encoding: UTF-8

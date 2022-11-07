@@ -5,18 +5,23 @@
 \title{Isobaric Peptide Expression Data (e_data)}
 \format{
 A data frame with 215,220 rows (peptides) and 51 columns (peptide
-  identifier and samples):
+  identifier and samples, including one pooled reference sample for each TMT
+  plex):
 \describe{
   \item{Peptide}{Peptide name}
   \item{StrainA*}{Columns for Strain A samples}
   \item{StrainB*}{Columns for Strain B samples}
   \item{StrainC*}{Columns for Strain C samples}
+  \item{Pool_Plex*}{Columns for pooled reference samples, where the number in
+  the sample name corresponds to the TMT plex on which the pooled reference
+  sample was run}
 }
 }
 \description{
-A dataset containing a subset of de-identified data from a multi-omic study
-(labeled proteomics, lipidomics, and RNAseq data). This data has samples from
-three different strains of a virus. Since this is only a subset of data from
-this study, the number of samples is not identical across plexes, and the
-plex names are not sequential.
+These data are part of Experiment 1 (isobaric labeled proteomics, lipidomics,
+and RNAseq data), and consist of a subset of de-identified data from a
+multi-omic study . These data consist of samples from three different strains
+of a virus, plus pooled reference samples. Since this is only a subset of
+data from this study, the number of samples is not identical across TMT
+plexes, and the TMT plex names are not sequential.
 }

@@ -19,12 +19,8 @@ A pepData object
   meta information (e.g. mappings of peptides to proteins).}
 }
 }
-\source{
-See details of \code{\link{pmartRdata}} for relevant grant numbers.
-  Data is also available on MassIVE (massive.ucsd.edu) with dataset id
-  MSV000079152.
-}
 \description{
-An S3 object of class pepData (see \code{\link[pmartR]{as.pepData}} for
-details)
+These data are part of Experiment 2 (metabolomics, unlabeled peptide and
+associated protein data). An S3 object of class pepData (see
+\code{\link[pmartR]{as.pepData}} for details)
 }

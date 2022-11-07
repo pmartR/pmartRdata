@@ -18,7 +18,10 @@ A isobaricpepData object (see
 }
 }
 \description{
-An S3 object of class isobaricpepData from a multi-omic study
-(labeled proteomics, lipidomics, and RNAseq data). This data has samples from
-three different strains of a virus.
+These data are part of Experiment 1 (isobaric labeled proteomics, lipidomics,
+and RNAseq data), and consist of a subset of de-identified data from a
+multi-omic study . These data consist of samples from three different strains
+of a virus, plus pooled reference samples. Since this is only a subset of
+data from this study, the number of samples is not identical across TMT
+plexes, and the TMT plex names are not sequential.
 }

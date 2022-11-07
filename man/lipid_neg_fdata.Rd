@@ -2,17 +2,18 @@
 % Please edit documentation in R/data.R
 \name{lipid_neg_fdata}
 \alias{lipid_neg_fdata}
-\title{Negative Ion Lipidomics Sample Feature Data (f_data)}
+\title{Negative Ion Lipidomics Sample Metadata (f_data)}
 \format{
-A data.frame with 45 rows (samples) and 2 columns (sample identifier
-  and condition):
+A data.frame with 45 rows (samples) and 4 columns (sample identifier
+  and associated information):
 \describe{
   \item{SampleID}{Sample identifier (matches column headers in e_data)}
   \item{Virus}{Strain of virus for each sample}
-  \item{Donor}{Which donor the sample originated from}
   \item{Replicate}{Biological replicate number}
+  \item{Donor}{Donor from which the sample originated}
 }
 }
 \description{
-A dataset containing the sample metadata.
+These data are part of Experiment 1 (isobaric labeled proteomics, lipidomics,
+and RNAseq data). A dataset containing the sample metadata.
 }

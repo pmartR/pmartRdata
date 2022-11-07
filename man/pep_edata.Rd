@@ -4,21 +4,19 @@
 \alias{pep_edata}
 \title{Peptide-level Expression Data (e_data)}
 \format{
-A data.frame with 17,407 rows (peptides) and 13 columns (peptide
+A data.frame with 21,329 rows (peptides) and 25 columns (peptide
   identifier and samples):
 \describe{
-  \item{Mass_Tag_ID}{Peptide mass tag identifier}
-  \item{Mock*}{Three columns of mock samples}
-  \item{Infection*}{Eight columns of infection samples}
+  \item{Peptide}{Unique character string for peptide identifier}
+  \item{Sample_*_Phenotype1_*}{Columns for samples belonging to the Phenotype
+  1 group}
+  \item{Sample_*_Phenotype2_*}{Columns for samples belonging to the Phenotype
+  2 group}
+  \item{Sample_*_Phenotype3_*}{Columns for samples belonging to the Phenotype
+  3 group}
 }
-}
-\source{
-See details of \code{\link{pmartRdata}} for relevant grant numbers.
-  Data is also available on MassIVE (massive.ucsd.edu) with dataset id
-  MSV000079152.
 }
 \description{
-A dataset containing the quantified mass spectra for 17,407 peptides
-collected on a Thermo LTQ-Orbitrap Velos Mass Spectrometer (Thermo Fisher
-Corporation, San Jose, CA, USA).
+These data are part of Experiment 2 (metabolomics, unlabeled peptide and
+associated protein data).
 }
