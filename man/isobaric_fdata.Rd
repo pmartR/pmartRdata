@@ -2,19 +2,25 @@
 % Please edit documentation in R/data.R
 \name{isobaric_fdata}
 \alias{isobaric_fdata}
-\title{Isobaric Peptide Feature Data (f_data)}
+\title{Isobaric Peptide Sample Metadata (f_data)}
 \format{
 A data frame with 50 rows (samples) and 6 columns (sample identifier,
   experiment/plate information, and information about each sample):
 \describe{
-  \item{SampleID}{Sample identifier (matches column headers in isobaric_edata)}
+  \item{SampleID}{Sample identifier that matches column headers in
+  isobaric_edata}
   \item{Plex}{iTRAQ plate/experiment information}
   \item{Virus}{Strain of virus for each sample}
   \item{Donor}{Which donor the sample originated from}
   \item{Replicate}{Biological replicate number}
-  \item{TMT_day_plex_order}{The day, plex, and order on plate for the sample}
+  \item{TMT_day_plex_order}{The day, TMT plex, and order on plate for the
+  sample}
 }
 }
 \description{
-A dataset containing the sample metadata.
+These data are part of Experiment 1 (isobaric labeled proteomics, lipidomics,
+and RNAseq data), and consist of a subset of de-identified data from a
+multi-omic study. This dataset contains the sample metadata. Since this is
+only a subset of data from this study, the number of samples is not identical
+across TMT plexes, and the TMT plex names are not sequential.
 }

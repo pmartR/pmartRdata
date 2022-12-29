@@ -17,10 +17,8 @@ A proData object
   \item{e_meta}{NULL}
 }
 }
-\source{
-See details of \code{\link{pmartRdata}} for relevant grant numbers.
-}
 \description{
-An S3 object of class proData (see \code{\link[pmartR]{as.proData}} for
-details)
+These data are part of Experiment 2 (metabolomics, unlabeled peptide and
+associated protein data). An S3 object of class proData (see
+\code{\link[pmartR]{as.proData}} for details)
 }

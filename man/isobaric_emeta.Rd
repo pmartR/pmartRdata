@@ -2,7 +2,7 @@
 % Please edit documentation in R/data.R
 \name{isobaric_emeta}
 \alias{isobaric_emeta}
-\title{Isobaric Peptide Feature Data (e_meta)}
+\title{Isobaric Peptide Biomolecule Metadata (e_meta)}
 \format{
 A data frame with 215,220 rows (peptides) and 2 columns:
 \describe{
@@ -11,5 +11,8 @@ A data frame with 215,220 rows (peptides) and 2 columns:
 }
 }
 \description{
-A dataset containing the biomolecule metadata, a mapping of peptides to proteins.
+These data are part of Experiment 1 (isobaric labeled proteomics, lipidomics,
+and RNAseq data), and consist of a subset of de-identified data from a
+multi-omic study. This dataset contains the biomolecule metadata, a mapping
+of peptides to proteins.
 }

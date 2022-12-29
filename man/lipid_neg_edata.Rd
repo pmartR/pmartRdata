@@ -4,7 +4,7 @@
 \alias{lipid_neg_edata}
 \title{Negative Ion Lipidomics Expression Data (e_data)}
 \format{
-A data.frame with 275 rows (lipids) and 46 columns (lipid identifier
+A data.frame with 337 rows (lipids) and 46 columns (lipid identifier
   and samples):
 \describe{
   \item{Lipid}{Lipid common name}
@@ -14,7 +14,8 @@ A data.frame with 275 rows (lipids) and 46 columns (lipid identifier
 }
 }
 \description{
-A dataset containing a subset of de-identified data from a multi-omic study
-(labeled proteomics, lipidomics, and RNAseq data). This data has samples from
-three different strains of a virus.
+These data are part of Experiment 1 (isobaric labeled proteomics, lipidomics,
+and RNAseq data). A dataset containing a subset of de-identified data from a
+multi-omic study (labeled proteomics, lipidomics, and RNAseq data). This data
+has samples from three different strains of a virus.
 }

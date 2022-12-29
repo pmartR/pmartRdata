@@ -2,9 +2,9 @@
 % Please edit documentation in R/data.R
 \name{lipid_neg_emeta}
 \alias{lipid_neg_emeta}
-\title{Negative Ion Lipidomics Feature Data (e_meta)}
+\title{Negative Ion Lipidomics Biomolecule Metadata (e_meta)}
 \format{
-A data frame with 275 rows (peptides) and 3 columns:
+A data frame with 337 rows (peptides) and 3 columns:
 \describe{
   \item{Lipid}{Lipid identifier}
   \item{Row}{Lipid row}
@@ -12,5 +12,6 @@ A data frame with 275 rows (peptides) and 3 columns:
 }
 }
 \description{
-A dataset containing biomolecule metadata.
+These data are part of Experiment 1 (isobaric labeled proteomics, lipidomics,
+and RNAseq data). A dataset containing biomolecule metadata.
 }

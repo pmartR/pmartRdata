@@ -4,26 +4,20 @@
 \alias{pro_edata}
 \title{Protein-level Expression Data (e_data)}
 \format{
-A data.frame with 2,731 rows (proteins) and 12 columns (protein
+A data.frame with 2,982 rows (proteins) and 25 columns (protein
   identifier and samples):
 \describe{
-  \item{Reference}{Reference protein name}
-  \item{Mock*}{Three columns of mock samples}
-  \item{Infection*}{Eight columns of infection samples}
+  \item{RazorProtein}{Protein identifier}
+  \item{Sample_*_Phenotype1_*}{Columns for samples belonging to the Phenotype
+  1 group}
+  \item{Sample_*_Phenotype2_*}{Columns for samples belonging to the Phenotype
+  2 group}
+  \item{Sample_*_Phenotype3_*}{Columns for samples belonging to the Phenotype
+  3 group}
 }
-}
-\source{
-See details of \code{\link{pmartRdata}} for relevant grant numbers.
 }
 \description{
-A dataset containing the log2 median-normalized quantified mass spectra for
-2,731 proteins (quantified from \code{\link{pep_edata}}) using Bayesian
-proteoform modeling (Webb-Robertson, 2014).
-}
-\references{
-Webb-Robertson BJ, Matzke MM, Datta S, Payne SH, Kang J, Bramer
-  LM, Nicora CD, Shukla AK, Metz TO, Rodland KD, Smith RD, Tardiff MF,
-  McDermott JE, Pounds JG, Waters KM (2014), \emph{Bayesian proteoform
-  modeling improves protein quantification of global proteomic measurements}.
-  Molecular & Cellular Proteomics. doi: 10.1074/mcp.M113.030932.
+These data are part of Experiment 2 (metabolomics, unlabeled peptide and
+associated protein data). A dataset containing the log2 median-normalized
+quantified mass spectra for 2,982 proteins from 24 samples.
 }
