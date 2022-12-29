@@ -581,6 +581,27 @@ NULL
 #' @name pro_edata
 NULL
 
+#' Protein-level Biomolecule Metadata (e_meta)
+#'
+#' These data are part of Experiment 2 (metabolomics, unlabeled peptide and
+#' associated protein data). A dataset containing the protein metadata 
+#' (resulting from the roll-up of peptides to proteins within pmartR).
+#'
+#' @format A data.frame with 2,982 rows (proteins) and 3 columns (protein
+#'   identifier and meta data):
+#' \describe{
+#'   \item{RazorProtein}{Protein identifier that matches RazorProtein column in
+#'   pep_edata}
+#'   \item{peps_per_pro}{Integer count of number of peptides for each protein; 
+#'   automatically calculated in protein_quant function in pmartR}
+#'   \item{n_peps_used}{Integer count of the number of peptides used when
+#'   rolling up to the protein level; automatically calculated in protein_quant
+#'   function in pmartR}
+#' }
+#' @rdname pro_emeta
+#' @name pro_emeta
+NULL
+
 #' Protein-level Sample Metadata (f_data)
 #'
 #' These data are part of Experiment 2 (metabolomics, unlabeled peptide and
@@ -664,7 +685,7 @@ NULL
 #' @format A data.frame with 45 rows (samples) and 4 columns (sample identifier
 #'   and condition):
 #' \describe{
-#'   \item{SampleID}{Sample identifier (matches column headers in e_data)}
+#'   \item{SampleName}{Sample identifier (matches column headers in e_data)}
 #'   \item{Virus}{Strain of virus for each sample}
 #'   \item{Donor}{Which donor the sample originated from}
 #'   \item{Replicate}{Biological replicate number}
