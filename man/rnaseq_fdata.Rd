@@ -7,7 +7,7 @@
 A data.frame with 45 rows (samples) and 4 columns (sample identifier
   and condition):
 \describe{
-  \item{SampleID}{Sample identifier (matches column headers in e_data)}
+  \item{SampleName}{Sample identifier (matches column headers in e_data)}
   \item{Virus}{Strain of virus for each sample}
   \item{Donor}{Which donor the sample originated from}
   \item{Replicate}{Biological replicate number}
