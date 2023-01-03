@@ -2,20 +2,19 @@
 % Please edit documentation in R/data.R
 \name{metab_fdata}
 \alias{metab_fdata}
-\title{Metabolomics Sample Feature Data (f_data)}
+\title{Metabolomics Sample Metadata (f_data)}
 \format{
-A data.frame with 12 rows (samples) and 2 columns (sample identifier
-  and condition):
+A data.frame with 50 rows (samples) and 4 columns (sample identifier
+  and associated information):
 \describe{
-  \item{SampleID}{Sample identifier (matches column headers in lipid_edata)}
-  \item{Condition}{Character string indicating either "Infection" or "Mock"}
+  \item{SampleID}{Sample identifier (matches column headers in metab_edata)}
+  \item{Phenotype}{Character string indicating Phenotype 1, 2, or 3}
+  \item{SecondPhenotype}{Character string indicating A or B}
+  \item{Characteristic}{Numeric value corresponding to a measured
+  characteristic for each sample}
 }
-}
-\source{
-See details of \code{\link{pmartRdata}} for relevant grant numbers.
-  Data is also available on MassIVE (massive.ucsd.edu) with dataset id
-  MSV000079153.
 }
 \description{
-A dataset containing the sample metadata.
+These data are part of Experiment 2 (metabolomics, unlabeled peptide and
+associated protein data). A dataset containing the sample metadata.
 }

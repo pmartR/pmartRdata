@@ -14,13 +14,14 @@ A proData object
   sample with one column giving the unique sample identifiers found in e_data
   column names and other columns providing qualitative and/or quantitative
   traits of each sample.}
-  \item{e_meta}{NULL}
+  \item{e_meta}{a data.frame with \eqn{p} rows. Each row
+  corresponds to a protein with one column giving protein names (must be
+  named the same as the column in \code{e_data}) and other columns giving
+  meta information (e.g. mappings of proteins to genes or other identifiers).}
 }
-}
-\source{
-See details of \code{\link{pmartRdata}} for relevant grant numbers.
 }
 \description{
-An S3 object of class proData (see \code{\link[pmartR]{as.proData}} for
-details)
+These data are part of Experiment 2 (metabolomics, unlabeled peptide and
+associated protein data). An S3 object of class proData (see
+\code{\link[pmartR]{as.proData}} for details)
 }

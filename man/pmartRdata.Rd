@@ -5,37 +5,81 @@
 \alias{pmartRdata}
 \title{pmartRdata}
 \description{
-The pmartRdata package contains four sets of example mass spectrometry data: proteomics (both peptide- and protein-level data), metabolomics, and lipidomics.
+The pmartRdata package contains example datasets compatible with the pmartR
+package. These datasets include unlabeled (LC-MS/MS) and isobaric labeled
+(TMT) peptide, protein, metabolites (GC-MS and NMR), lipids (both negative
+and positive LC-MS ionization modes), and RNAseq. Some of the datasets were
+generated as part of the same experiments, as described below.
 }
 \section{Data types}{
 
 
-This package contains accurate mass and time (AMT) tag mass spectrometry (MS) data for an experiment investigating the human Calu-3 cell response to an infectious clone of Middle Eastern Respiratory Syndrome coronavirus. Data at the peptide (LS-MS/MS), metabolite (GC-MS), and lipid (LC-MS/MS) level are available. Peptide-level data has also been quantified to the protein level using Bayesian proteoform modeling (Webb-Robertson, 2014). Each dataset is from the same experiment, where samples were either infected ("Infection" group) or mock infected ("Mock" group). All samples were collected at the same time point after infection (either the true infection or the mock infection).
+Experiment 1 Data: Host response to virus using human cells. This experiment
+includes isobaric labeled peptide data (TMT), negative and positive
+ionization mode LC-MS lipidomics data, and RNAseq data. Sample names across
+the different data types from this experiment have been harmonized, to allow
+data integration. These data are a deidentified subset from an experiment
+that has not yet been published. Samples included in this subset consist of
+human cells infected with one of three virus strains.
+
+Experiment 2 Data: Human tissue samples. This experiment includes unlabeled
+peptide data (LC-MS/MS), the associated protein data, and metabolomics data
+(GC-MS). Sample names across the different data types from this experiment
+have been harmonized, to allow data integration. Note that the These data are
+a deidentified subset from an experiment that has not yet been published.
+Samples included in this subset consist of tissue samples from humans
+exhibiting three primary phenotypes.
+
+NMR Data: Tomato plant samples. These data are publicly available via Biais
+et al. (reference listed below). Samples in this experiment each come from
+one of four different time points.
+
+Technical Replicates Peptide Data: Mouse plasma samples. These data are a
+subset of the data used in Webb-Robertson et al. (reference listed below) and
+include biological samples associated with one of two levels of a factor, a
+dilution level of mouse plasma to Shewanella Oneidensis MR-1, and a technical
+replicate (two technical replicates per biological sample).
 }
 
 \section{Data formats}{
 
 
-Each type of data is provided in two formats. The first format is an S3 object class used by the R pacakge \code{pmartRqc}. Data available as S3 objects 'pepData', 'proData', 'metabData', and 'lipidData' are created by \code{\link[pmartRqc]{as.pepData}}, \code{\link[pmartRqc]{as.proData}}, \code{\link[pmartRqc]{as.metabData}}, or \code{\link[pmartRqc]{as.lipidData}}, respectively. The second format corresponds to the individual components of the S3 object classes, \code{e_data} - expression data, \code{f_data} - feature data (meta info about samples), and \code{e_meta} - expression meta data. See \code{pmartRqc} for more details.
-}
-
-\section{Support}{
-
-
-Data generation was supported by the National Institutes of Health (NIH)/National Institute of Allergy and Infectious Diseases (NIAID) through grant U19 A1-106772 and computational work was supported by the NIH/National Cancer Institute through grant U01–1CA184783.  Data were collected and processed in the Environmental Molecular Sciences Laboratory (EMSL). EMSL is a national scientific user facility supported by the Department of Energy. All work was performed at PNNL, which is a multiprogram national laboratory operated by Battelle for the U.S. Department of Energy under contract DE-AC06-76RL01830.
+  Each type of data is provided in two formats. The first format is an S3
+  object class used by the R package \code{pmartR}. Data available as S3
+  objects 'pepData', 'proData', 'metabData', 'lipidData', ‘nmrData’, and
+  ‘seqData’ are created by \code{\link[pmartR]{as.pepData}},
+  \code{\link[pmartR]{as.proData}}, \code{\link[pmartR]{as.metabData}},
+  \code{\link[pmartR]{as.lipidData}}, \code{\link[pmartR]{as.nmrData}},
+  \code{\link[pmartR]{as.seqData}}, respectively. The second format
+  corresponds to the individual components of the S3 object classes,
+  \code{e_data} - biomolecule expression data, \code{f_data} – sample meta
+  information, and \code{e_meta} – biomolecule expression meta data. See
+  \code{pmartR} for more details.
 }
 
 \references{
-Webb-Robertson BJ, Matzke MM, Datta S, Payne SH, Kang J, Bramer LM, Nicora CD, Shukla AK, Metz TO, Rodland KD, Smith RD, Tardiff MF, McDermott JE, Pounds JG, Waters KM (2014), \emph{Bayesian proteoform modeling improves protein quantification of global proteomic measurements}. Molecular & Cellular Proteomics. doi: 10.1074/mcp.M113.030932.
+Webb-Robertson BJ, Matzke MM, Datta S, Payne SH, Kang J, Bramer
+  LM, Nicora CD, Shukla AK, Metz TO, Rodland KD, Smith RD, Tardiff MF,
+  McDermott JE, Pounds JG, Waters KM (2014), \emph{Bayesian proteoform
+  modeling improves protein quantification of global proteomic measurements}.
+  Molecular & Cellular Proteomics. doi: 10.1074/mcp.M113.030932.
 
-Tilton, S. C.; Waters, K. M.; Karin, N. J.; Webb-Robertson, B. J.; Zangar, R. C.; Lee, K. M.; Bigelow, D. J.; Pounds, J. G.; Corley, R. A., \emph{Diet-induced obesity reprograms the inflammatory response of the murine lung to inhaled endotoxin}. Toxicol Appl Pharmacol 2013, 267 (2), 137-48.
+Biais B, Benard C, Beauvoit B, Colombie S, Prodhomme D, Menard G, 
+  Bernillon S, Gehl B, Gautier H, Ballias P, et al. (2014), \emph{Remarkable 
+  reproducibility of enzyme activity profiles in tomato fruits grown under 
+  contrasting environments provides a roadmap for studies of fruit metabolism}.
+  Plant Physiol 164 (3), 1204-1221. doi: 10.1104/pp.113.231241.
 }
 \seealso{
-\code{\link[pmartR]{as.proData}}
-
 \code{\link[pmartR]{as.lipidData}}
 
 \code{\link[pmartR]{as.metabData}}
 
+\code{\link[pmartR]{as.nmrData}}
+
 \code{\link[pmartR]{as.pepData}}
+
+\code{\link[pmartR]{as.proData}}
+
+\code{\link[pmartR]{as.seqData}}
 }
